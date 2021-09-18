@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="wrap">
+    <div class="calc-info">
+      <h2>calc</h2>
+      <div class="theme-select">
+        <p class="theme-option-1">1</p>
+        <p class="theme-option-2">2</p>
+        <p class="theme-option-3">3</p>
+        <div class="theme-bar">
+          <span class="theme-mode"></span>
+        </div>
+        <span class="theme-title">THEME</span>
+
+      </div>
+    </div>
+    <input type="text" id="display">
+    <div class="buttons">
+      <button class="number-btn" value="7">7</button>
+      <button class="number-btn" value="8">8</button>
+      <button class="number-btn" value="9">9</button>
+      <button class="operationbtn" id="del">DEL</button>
+      <button class="number-btn" value="4">4</button>
+      <button class="number-btn" value="5">5</button>
+      <button class="number-btn" value="6">6</button>
+      <button class="operation-btn" value="+" onclick='dzialania(1)' id="add">+</button>
+      <button class="number-btn" value="1">1</button>
+      <button class="number-btn" value="2">2</button>
+      <button class="number-btn" value="3">3</button>
+      <button class="operation-btn" value="-" onclick='dzialania(2)' id="remove">-</button>
+      <button class="number-btn" id="dot">.</button>
+      <button class="number-btn" value="0">0</button>
+      <button class="operation-btn" value="/" onclick='dzialania(4)' id="devide">/</button>
+      <button class="operation-btn" value="x" onclick='dzialania(3)' id="times">x</button>
+      <button class="reset-btn" id="reset">RESET</button>
+      <button class="equals-btn" value="=" id="eq">=</button>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/imxbartus">imxbartus</a>.
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

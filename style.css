@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+:bgc {
+    background-color: hsl(222, 26%, 31%);
+    background-color: hsl(223, 31%, 20%);
+    background-color: hsl(224, 36%, 15%);
+}
+
+:keys {
+    background-color: hsl(225, 21%, 49%);
+    background-color: hsl(224, 28%, 35%);
+    background-color: hsl(6, 70%, 34%);
+    background-color: hsl(30, 25%, 89%);
+    background-color: hsl(28, 16%, 65%);
+}
+
+:txt {
+    background-color: hsl(221, 14%, 31%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    bottom: 5px;
+    position: absolute;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+.wrap { 
+    width: 500px;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 330px;
+    padding: 20px;
+}
+
+.calc-info {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.calc-info h2 {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.theme-select {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.theme-title {
+    position: absolute;
+    bottom: 3px;
+    left: -60%;
+    font-size: 13px;
+}
+
+.theme-select p {
+    padding: 10px 2px 5px;
+    margin: 0 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.theme-bar {
+    height: 25px;
+    width: 77px;
+    border-radius: 20px;
+    background-color: hsl(223, 31%, 20%);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+span.theme-mode {
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: hsl(6, 63%, 50%);
+    margin-left: 10%;
+}
+
+/* INPUT SECTION */
+
+#display {
+    height: 12vh;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(224, 36%, 15%);
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #fff;
+    text-align: right;
+    outline: none;
+    padding-right: 20px;
+}
+
+#display.theme1change {
+    background-color: hsl(224, 36%, 15%);
+    color: #fff;
+    
+}
+
+.buttons {
+    /* height: 50vh; */
+    background-color: hsl(223, 31%, 20%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px; 
+    border-radius: 10px;
+}
+
+.buttons button {
+    flex-basis: 19%;
+    font-size: 30px;
+    margin: 8px 5px;
+    height: 60px;
+    background-color: hsl(30, 25%, 89%);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 70px;
+    box-shadow: 0 5px 1px hsl(28, 16%, 65%);
+    cursor: pointer;
+    color: hsl(221, 14%, 31%);
+    transition: 0.2s;
+}
+
+.buttons button:hover {
+    transform:scale(0.95);
+}
+
+#reset, #eq {
+    flex-grow: 1;
+    font-size: 20px;
+    margin: 15px;
+
+}
+
+#del {
+    font-size: 20px;
+}
+
+#eq {
+    color: #fff;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 5px 1px hsl(6, 70%, 34%);
+}
+
+#reset, #del {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0 5px 1px hsl(224, 28%, 35%);
+    color: #fff;
+}
+
+/* ----------theme2-------- */
+
+span.theme1-active {
+    margin-left: 10%;
+}
+
+span.theme2-active {
+    margin-left: calc(50% - 10px);
+}
+
+span.theme3-active {
+    margin-left: calc(80% - 10px);
+}
+
+body.theme2 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.buttons.theme2bg,
+.theme-bar.theme2bg {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.calc-info h2.theme2color,
+.theme-title.theme2color,
+.theme-select p.theme2color {
+    color:hsl(221, 14%, 31%);
+}
+
+#display.theme2change {
+    color:hsl(221, 14%, 31%);
+    background-color: white;
+}
+
+#eq .theme2btn {
+    color: #fff;
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 5px 1px hsl(25, 99%, 27%);
+}
+
+#reset.theme2btn,
+#del.theme2btn{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 5px 1px hsl(185, 58%, 25%);
+    color: #fff;
+}
+
+/* ----THEME3---- */
+.calc-info h2.theme3color,
+.theme-title.theme3color,
+.theme-select p.theme3color,
+.buttons button.theme3color
+{
+    color: hsl(52, 100%, 62%);
+}
+
+span.theme-mode.dot-change {
+    background-color:hsl(176, 100%, 44%);
+}
+
+.theme-bar.theme3bg,
+.buttons.theme3bg
+ {
+    background-color: hsl(268, 71%, 12%);
+}
+#display.theme3bg{
+    color:hsl(52, 100%, 62%);
+    background-color: hsl(268, 71%, 12%);
+
+}
+
+.buttons button.theme3bgc{
+    background-color:hsl(268, 47%, 21%);
+    box-shadow: 0 5px 1px hsl(285, 91%, 52%);
+}
+
+body.theme3 {
+    background-color: hsl(268, 75%, 9%);
+}
+
+#reset.theme3change, #del.theme3change {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 5px 1px hsl(285, 91%, 52%);
+}
+
+#eq.theme3eq {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 5px 1px hsl(177, 92%, 70%);
+}
+
+
+@media (max-width: 375px) {
+
+    .buttons {
+        padding:10px; 
+        border-radius: 10px;
+    }
+    
+    .buttons button {
+        font-size: 25px;
+        height: 50px;
+        line-height: 60px;
+    }
+
+    
+    #reset, #eq {
+        flex-grow: 1;
+        font-size: 20px;
+        margin: 10px;
+    
+    }
+}
+
+
+
+
+
+/* footer */
+
