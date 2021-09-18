@@ -13,6 +13,7 @@ const delBtn = document.getElementById("del");
 
 delBtn.addEventListener("click", () => {
   display.value = display.value.substring(0, display.value.length - 1);
+  przecinek = false;
 });
 
 dot.addEventListener("click", dotFunction);
