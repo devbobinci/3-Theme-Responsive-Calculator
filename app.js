@@ -70,6 +70,7 @@ operationBtn.forEach((btn) => {
 
 resetBtn.addEventListener("click", () => {
   display.value = "";
+  przecinek = false;
 });
 
 // theme
